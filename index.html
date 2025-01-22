@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styesheets/styles.css">
+    <link rel="stylesheet" href="styesheets/sidebar.css">
+    <link rel="stylesheet" href="styesheets/mediaQueries.css">
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- LETS START -->
+  <body>
+    <section class="allSections">
+        <div class="nav" id="nav">
+          <div class="logo">
+            <p class="logo-img"><span class="span1">Z</span>UBAIR</p>
+          </div>
+          <div class="nav-right">
+            <ul class="sidebar">
+              <li class="sidebar-close-icon" onclick="hideSidebar()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#000"
+                >
+                  <path
+                    d="M120-240v-80h520v80H120Zm664-40L584-480l200-200 56 56-144 144 144 144-56 56ZM120-440v-80h400v80H120Zm0-200v-80h520v80H120Z"
+                  /></svg
+                ><a href="#"></a>
+              </li>
+
+              <li class="items" id="items"><a href="#home">Home</a></li>
+              <li class="items" id="items"><a href="about">About</a></li>
+              <li class="items" id="items"><a href="#projects">Projects</a></li>
+              <li class="items" id="items">
+                <a href="#contact">Contact Me</a>
+              </li>
+            </ul>
+
+            <ul class="list" id="list">
+              <li class="hideOnMobile"><a href="#home">Home</a></li>
+              <li class="hideOnMobile"><a href="about">About</a></li>
+              <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+              <li class="hideOnMobile"><a href="contact">Work</a></li>
+              <li class="sidebar-open-icon" onclick="showSidebar()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#000"
+                >
+                  <path
+                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+     
+
+      <!-- SECTION 2ND -->
+        <section class="firstSection">
+          <div class="intro-name">
+            Hi, My Name is <span class="purple-name">Zubair</span>
+            <div>And I am a <span class="red-name">passionate </span></div>
+
+            <span id="element"></span>
+          </div>
+
+            <!-- ADDING LOGO ASIDE -->
+      <div class="mylogo" id="mylogo">
+        <img class="image-logo" src="/images/logo.jpg" />
+      </div>
+        </section>
+
+    
+    </section>
+
+    <!-- WARNING SCRIPTS FROM HERE -->
+
+    <!-- for SideBar -->
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+
+    <!-- Animation here -->
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          'Video Editor <ion-icon name="videocam-outline"></ion-icon>  ',
+          'Photographer <ion-icon name="camera-outline"></ion-icon>    ',
+          'App Developer <ion-icon name="heart"></ion-icon>  ',
+          'Web Developer <ion-icon name="construct"></ion-icon>  ',
+        ],
+        typeSpeed: 80,
+        loop: true,
+      });
+    </script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

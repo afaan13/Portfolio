@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins,"sans-serif";
+}
+
+
+body {
+  
+    background-image: url(/images/laptop.png);
+    padding-top: clamp(2rem,12vw,4rem);
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+
+
+  
+}
+
+
+.nav {
+
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:clamp(1rem,4vw,5rem);
+  padding-right: 20px;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 10px #3b0808cc;
+  height: clamp(1rem,4vw,5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  cursor: pointer;
+  font-size: clamp(0.8rem, 2vw, 3rem);
+  margin: 0 9vw;
+  font-weight: 700;
+  color: rgb(132, 3, 252);
+}
+
+span
+{
+    color: rgb(0, 0, 0);
+}
+
+
+.logo-img:hover {
+  color: rgb(25, 44, 107);
+  font-weight: 700;
+}
+
+.logo-img:active
+{
+    color: rgb(0, 0, 0);
+
+}
+
+ul {
+
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-right a {
+  display: flex;
+  margin: 2.2vw;
+  color: rgb(0, 0, 0);
+  font-size: clamp(0.6rem, 1.5vw, 4rem);
+  text-decoration: none;
+}
+
+ul a:hover {
+  text-decoration: overline;
+  color: rgb(162, 1, 255);
+}
+
+ul a:active
+{
+    color: rgb(202, 19, 19);
+
+}
+
+
+/* Section One */
+
+p
+{
+    font-size: clamp(1rem,2vw,1.5rem);
+}
+
+.allSections
+{
+  d
+  display: inline-block;
+}
+
+.firstSection {
+  display: inline-block;
+  display: inline-block;
+  color: rgb(255, 233, 233);
+  text-align: center;
+}
+
+.purple-name
+{
+  color: rgb(4, 0, 255);
+}
+
+.red-name{
+color: red;
+
+}
+
+#element{
+color: yellow;
+}
+
+/* 
+hr {
+
+  display: inline-block;
+  height: 13rem;
+  color: brown;
+  border: 1px solid yellow;
+} */
+
+.intro-name
+
+{
+  display: inline-block;
+  margin-left: clamp(0.5rem,1vw,3rem);
+  margin-top:clamp(1rem,4vw,5rem); ;
+  width: 50vw;
+  font-size: 3vw;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.image-logo,
+.mylogo{
+  margin: 0 0 0 1rem;
+  display: inline-block;
+  border-radius: 10rem;
+  width: 10rem;
+}
+
+.image-logo{
+border: double rgb(0, 0, 0);
+backdrop-filter: blur(10px);
+box-shadow: 10px 10px 10px rgba(26, 7, 7, 0.9);
+}

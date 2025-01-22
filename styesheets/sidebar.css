@@ -1,0 +1,49 @@
+
+
+/* SIDEBAR */
+
+.sidebar
+{
+
+position:fixed;
+top: 0;
+right: 0;
+height: 100vh;
+width: 200px;
+z-index: 999;
+background-color: #ffffff67;
+backdrop-filter:  blur(10px);
+box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+display: none;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+.sidebar li
+{
+width: 100%;
+
+}
+
+.sidebar a
+{
+  width: 100%;
+}
+/* Side Buttons */
+
+.sidebar-open-icon
+{
+  margin-top: 5px;
+  display: none;
+
+}
+
+
+.sidebar-close-icon
+{
+
+  margin-left: 10px;
+ 
+}
+
