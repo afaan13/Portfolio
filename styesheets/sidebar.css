@@ -11,7 +11,7 @@ right: 0;
 height: 100vh;
 width: 200px;
 z-index: 999;
-background-color: #ffffff67;
+background-color: #8b8b8bd7;
 backdrop-filter:  blur(10px);
 box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
 display: none;
@@ -28,7 +28,11 @@ width: 100%;
 
 .sidebar a
 {
+  
   width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+
 }
 /* Side Buttons */
 
@@ -43,7 +47,7 @@ width: 100%;
 .sidebar-close-icon
 {
 
-  margin-left: 10px;
+  margin: 5px 0 0 10px;
  
 }
 

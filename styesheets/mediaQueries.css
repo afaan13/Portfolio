@@ -43,7 +43,6 @@
 }
 
 
-
   .firstSection {
     width: 100vw;
     flex-direction: column-reverse;
@@ -51,8 +50,8 @@
     align-items: center;
   }
 
-  .mylogo,
-  .image-logo {
+  .logo-class,
+  .logo-image {
     margin: 0 0 1rem 0;
     display: block;
     border-radius: 30vw;

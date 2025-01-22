@@ -12,12 +12,13 @@ body {
 
     scroll-behavior: smooth;
     background-image: url(/images/laptop.png);
+    background-color: rgb(44, 49, 114);
     padding-top: clamp(2rem,12vw,4rem);
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 200vh;
+    min-height: 100vh;
 
 
   
@@ -48,9 +49,11 @@ body {
   color: rgb(132, 3, 252);
 }
 
-span
+.span1
 {
-    color: rgb(0, 0, 0);
+  background-color: black;
+  padding: 0 1px;
+    color: rgb(255, 238, 0);
 }
 
 
@@ -168,8 +171,8 @@ hr {
 
 
 
-.image-logo,
-.mylogo{
+.logo-image,
+.logo-class{
   
   user-select: none;
   display: inline-block;
@@ -177,7 +180,7 @@ hr {
   width: clamp(10rem,60vh,30rem);
 }
 
-.image-logo{
+.logo-image{
 border: double rgb(0, 0, 0);
 backdrop-filter: blur(10px);
 box-shadow: 10px 10px 10px rgba(26, 7, 7, 0.9);
