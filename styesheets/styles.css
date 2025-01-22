@@ -9,15 +9,15 @@
 
 
 body {
-  
+
+    scroll-behavior: smooth;
     background-image: url(/images/laptop.png);
     padding-top: clamp(2rem,12vw,4rem);
     background-size:cover;
     background-attachment: fixed;
-    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    min-height: 200vh;
 
 
   
@@ -25,17 +25,16 @@ body {
 
 
 .nav {
-
-    position:fixed;
+  position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height:clamp(1rem,4vw,5rem);
+    height: clamp(1rem,4vw,5rem);
   padding-right: 20px;
   z-index: 100;
   background-color: rgb(255, 255, 255);
   box-shadow: 3px 3px 10px #3b0808cc;
-  height: clamp(1rem,4vw,5rem);
+ 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,30 +100,46 @@ p
     font-size: clamp(1rem,2vw,1.5rem);
 }
 
-.allSections
-{
-  d
-  display: inline-block;
-}
-
 .firstSection {
-  display: inline-block;
-  display: inline-block;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
   color: rgb(255, 233, 233);
   text-align: center;
+  align-items:center;
 }
 
-.purple-name
+
+.hi{
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.first-name, .last-name
+    {
+      font-weight: 600;
+      color: rgb(0, 248, 165);
+    }
+
+.Main-Name
 {
-  color: rgb(4, 0, 255);
+  font-weight: 500;
+  padding: 0 3px;
+  background-color: #fa12d3;
+  color: rgb(241, 255, 46);
 }
 
 .red-name{
-color: red;
+  font-weight: 600;
+  background-color:rgb(43, 41, 41);
+  padding: 0 2px;
+color: rgb(255, 255, 255);
 
 }
 
 #element{
+  font-weight: 700;
 color: yellow;
 }
 
@@ -140,6 +155,8 @@ hr {
 .intro-name
 
 {
+  cursor:default;
+  user-select: none;
   display: inline-block;
   margin-left: clamp(0.5rem,1vw,3rem);
   margin-top:clamp(1rem,4vw,5rem); ;
@@ -149,12 +166,15 @@ hr {
   justify-content: space-between;
 }
 
+
+
 .image-logo,
 .mylogo{
-  margin: 0 0 0 1rem;
+  
+  user-select: none;
   display: inline-block;
-  border-radius: 10rem;
-  width: 10rem;
+  border-radius: clamp(5rem,30vh,15rem);
+  width: clamp(10rem,60vh,30rem);
 }
 
 .image-logo{

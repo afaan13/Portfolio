@@ -1,40 +1,103 @@
-  /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 
-  @media (max-width: 800px) {
-    .hideOnMobile {
-      transition-duration: 1s;
-      display: none;
-    }
-    .sidebar-open-icon {
-      display: block;
-    }
+@media (max-width: 800px) {
+  .hideOnMobile {
+    transition-duration: 1s;
+    display: none;
+  }
+  .sidebar-open-icon {
+    display: block;
+  }
+}
+
+/* View On Mobile */
+
+@media (max-width: 420px) {
+  .sidebar {
+    width: 100%;
   }
 
-  @media (max-width: 420px) {
-    .sidebar {
-      width: 100%;
-    }
 
-    .image-logo,
-    .mylogo {
-      margin: 1rem;
-      display: inline-block;
-      border-radius: 3rem;
-      width: 5rem;
-    }
-
-    /* View On Mobile */
-
-    .intro-name {
-      display: inline-block;
-      margin-left: clamp(0.5rem, 1vw, 3rem);
-      margin-top: clamp(1.4rem, 4vw, 5rem);
-      width: 60vw;
-      font-size: 5vw;
-      /* align-items: center; */
-      justify-content: space-between;
-    }
-
+  body {
+    box-shadow: inset 10px 10px 20px rgba(black, 0.9);
+    backdrop-filter: blur(10px);
+    background-color: rgb(44, 49, 114);
   }
 
   
+  .nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  height: clamp(2.7rem,4vw,5rem);
+  padding-right: 20px;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 10px #3b0808cc;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+
+
+  .firstSection {
+    width: 100vw;
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+  }
+
+  .mylogo,
+  .image-logo {
+    margin: 0 0 1rem 0;
+    display: block;
+    border-radius: 30vw;
+    width: 60vw;
+    user-select: none;
+  }
+
+  .intro-name {
+    cursor: default;
+  /* backdrop-filter: blur(0.7px); */
+    display: block;
+    margin: 1.4rem 0 0 0;
+    width: 100vw;
+    font-size: 5vw;
+  }
+
+  .hi {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 2rem;
+    display: block;
+  }
+
+  .first-name,
+  .last-name {
+    font-weight: 500;
+    color: rgb(62, 255, 191);
+  }
+
+  .Main-Name {
+    font-weight: 700;
+    padding: 0 2px;
+    background-color: #251949;
+    color: rgb(241, 255, 46);
+  }
+
+  .red-name {
+    font-weight: 600;
+    background-color: rgb(43, 41, 41);
+    padding: 0 2px;
+    color: rgb(255, 255, 255);
+  }
+
+  #element {
+    font-weight: 700;
+    color: yellow;
+  }
+}
