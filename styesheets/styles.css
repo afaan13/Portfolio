@@ -11,14 +11,14 @@
 body {
 
     scroll-behavior: smooth;
-    background-image: url('/images/laptop.png');
+    background-image: url('images/laptop.png');
     background-color: rgb(44, 49, 114);
     padding-top: clamp(2rem,12vw,4rem);
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
 
 
   
