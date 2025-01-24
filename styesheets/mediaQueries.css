@@ -126,6 +126,14 @@
       justify-content: center;
     }
 
+    .para1-div{
+      width: 96%;
+      justify-content: center;
+      align-items: center;
+      overflow-x: none;
+      display: flex;
+      margin-right: 30px 10px;
+
     .para1 {
       display:block;
       font-family: "Montserrat";
